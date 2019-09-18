@@ -1,0 +1,17 @@
+1 Tela com intro e meu code name
+
+2 Tela de menu com
+	-play
+	-opções
+		-volume
+		-music
+		-sounds
+	-load
+	-help/infos/credits
+	-exit
+
+3 tela central do jogo? ou um star com definições?
+A tela tem que possuir seed randomica para deixar o jogo mais sensivel a cada pessoa que jogar ter uma experiencia diferente
+
+sistema de campanha e jogo aberto
+
