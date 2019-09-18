@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Ce_intro.unity
     guid: 9029fbb68219c8f4084dab9f38eef76e
+  - enabled: 1
+    path: Assets/Cenas/Ce_menu.unity
+    guid: b0ba4e2bb95e16745b773818979b6b03
   m_configObjects: {}
