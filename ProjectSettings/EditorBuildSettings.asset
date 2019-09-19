@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Ce_menu.unity
     guid: b0ba4e2bb95e16745b773818979b6b03
+  - enabled: 1
+    path: Assets/Cenas/Ce_jogar.unity
+    guid: 68652a64f26e18a48b482f88d9aa4f13
+  - enabled: 1
+    path: Assets/Cenas/Ce_carregar.unity
+    guid: 0af4ae39f636e334dbf9121b39b1fa78
+  - enabled: 1
+    path: Assets/Cenas/Ce_opcoes.unity
+    guid: dda0ee65d826e1c4c8bd072672a76878
+  - enabled: 1
+    path: Assets/Cenas/Ce_info.unity
+    guid: b6a8705841e3992439acf333b1cf23c3
   m_configObjects: {}

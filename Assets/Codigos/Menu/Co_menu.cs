@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Co_menu : MonoBehaviour
 {
@@ -30,10 +31,29 @@ public class Co_menu : MonoBehaviour
 
      void OnGUI()
     {
-        GUI.Button(new Rect(Rect_play),Img_play.texture,GUIStyle.none);
-        GUI.Button(new Rect(Rect_load), Img_load.texture, GUIStyle.none);
-        GUI.Button(new Rect(Rect_option), Img_option.texture, GUIStyle.none);
-        GUI.Button(new Rect(Rect_info), Img_info.texture, GUIStyle.none);
-        GUI.Button(new Rect(Rect_exit), Img_exit.texture, GUIStyle.none);
+        if(GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
+        {
+            print("Go play");
+            SceneManager.LoadScene("Ce_menu");
+        }
+        if(GUI.Button(Rect_load, Img_load.texture, GUIStyle.none))
+        {
+            print("Go load");
+            SceneManager.LoadScene("Ce_menu");
+        }
+        if(GUI.Button(Rect_option, Img_option.texture, GUIStyle.none))
+        {
+            print("Go options");
+            SceneManager.LoadScene("Ce_menu");
+        }
+        if(GUI.Button(Rect_info, Img_info.texture, GUIStyle.none))
+        {
+            print("Go infos");
+            SceneManager.LoadScene("Ce_menu");
+        }
+        if(GUI.Button(Rect_exit, Img_exit.texture, GUIStyle.none))
+        {
+            print("Go exit");
+        }
     }
 }
