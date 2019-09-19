@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Codigos\Menu\Co_intro.cs" />
     <Compile Include="Assets\Codigos\Menu\Co_menu.cs" />
+    <Compile Include="Assets\Codigos\Menu\Co_volta_menu.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Teste/Documents/GitHub/Cidade_isometrica/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

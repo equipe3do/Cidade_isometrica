@@ -34,22 +34,22 @@ public class Co_menu : MonoBehaviour
         if(GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
         {
             print("Go play");
-            SceneManager.LoadScene("Ce_menu");
+            SceneManager.LoadScene("Ce_jogar");
         }
         if(GUI.Button(Rect_load, Img_load.texture, GUIStyle.none))
         {
             print("Go load");
-            SceneManager.LoadScene("Ce_menu");
+            SceneManager.LoadScene("Ce_carregar");
         }
         if(GUI.Button(Rect_option, Img_option.texture, GUIStyle.none))
         {
             print("Go options");
-            SceneManager.LoadScene("Ce_menu");
+            SceneManager.LoadScene("Ce_opcoes");
         }
         if(GUI.Button(Rect_info, Img_info.texture, GUIStyle.none))
         {
             print("Go infos");
-            SceneManager.LoadScene("Ce_menu");
+            SceneManager.LoadScene("Ce_info");
         }
         if(GUI.Button(Rect_exit, Img_exit.texture, GUIStyle.none))
         {
