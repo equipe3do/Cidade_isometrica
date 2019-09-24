@@ -252,6 +252,7 @@ MonoBehaviour:
   Img_option: {fileID: 21300000, guid: 4d35d44fe2d579643a215e4dadfa0517, type: 3}
   Img_info: {fileID: 21300000, guid: df84a9cfdeb86c0428732b4b6c531e25, type: 3}
   Img_exit: {fileID: 21300000, guid: c0f4bc4459ce53d44a6b9c8be1f09459, type: 3}
+  Img_mouse_sobre: {fileID: 21300000, guid: 25aeec9029b24884694d41ba99524ef5, type: 3}
 --- !u!1 &2106454411
 GameObject:
   m_ObjectHideFlags: 0

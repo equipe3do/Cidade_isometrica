@@ -17,7 +17,10 @@ public class Co_menu : MonoBehaviour
     public Sprite Img_option;
     public Sprite Img_info;
     public Sprite Img_exit;
+    public Sprite Img_mouse_sobre;
+    bool mouse = false;
     
+
     void Start()
     {
         
@@ -26,10 +29,22 @@ public class Co_menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Rect_play.Contains(Input.mousePosition))
+        {
+            OnMouseEnter();
+            print("mouse sobre o play");
+        }
+        else
+        {
+            mouse = false;
+        }
     }
 
-     void OnGUI()
+     void OnMouseEnter()
+    {
+        mouse = true;
+    }
+    void OnGUI()
     {
         if(GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
         {
@@ -54,6 +69,9 @@ public class Co_menu : MonoBehaviour
         if(GUI.Button(Rect_exit, Img_exit.texture, GUIStyle.none))
         {
             print("Go exit");
+        }
+        if(mouse==true){
+            GUI.Button(Rect_play, Img_mouse_sobre.texture, GUIStyle.none);
         }
     }
 }
