@@ -2,3 +2,6 @@ dia: 17/09/2019
 Informações: Criado a base para o jogo, é um jogo isomentrico de estrategia onde vc tem que evoluir a cidade o transporte da mesma
 e elevar o nivel de felicidade dos moradores, sistema de tempo e ano com hora e clima.tem que ter a opção de segir os veiculos e
 o mata tem que ser isometrico de 2.5d
+
+dia: 20/09/2019
+Informações: Elaborado um codigo de chegagem do mouse, mas está dando divergencia de localização.
