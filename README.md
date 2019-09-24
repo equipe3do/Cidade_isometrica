@@ -3,4 +3,5 @@
  Com padrões de pastas para os itens dentro da pasta assets.
 Co = codigo
 Ce = cena
-Obj= objeto.
+Obj = objeto.
+Img = imagem
