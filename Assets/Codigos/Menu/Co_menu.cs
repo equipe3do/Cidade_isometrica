@@ -18,6 +18,12 @@ public class Co_menu : MonoBehaviour
     public Sprite Img_info;
     public Sprite Img_exit;
     public Sprite Img_mouse_sobre;
+    public Sprite Img_play_in;
+    public Sprite Img_load_in;
+    public Sprite Img_option_in;
+    public Sprite Img_info_in;
+    public Sprite Img_exit_in;
+    public Sprite Img_mouse_fora;
     bool mouse = false;
     
 
