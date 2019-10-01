@@ -172,7 +172,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -197,7 +197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498570321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -3.72, y: -0.64, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -228,7 +228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813316036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.09, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2106454412}
@@ -253,6 +253,12 @@ MonoBehaviour:
   Img_info: {fileID: 21300000, guid: df84a9cfdeb86c0428732b4b6c531e25, type: 3}
   Img_exit: {fileID: 21300000, guid: c0f4bc4459ce53d44a6b9c8be1f09459, type: 3}
   Img_mouse_sobre: {fileID: 21300000, guid: 25aeec9029b24884694d41ba99524ef5, type: 3}
+  Img_play_in: {fileID: 21300000, guid: 7df6e11f0924b4b408b69b7694436c13, type: 3}
+  Img_load_in: {fileID: 21300000, guid: a6084bf50eeb1ab4a9d8a46b00f22a1d, type: 3}
+  Img_option_in: {fileID: 21300000, guid: 50a9d916be47c6c48bfe0064687e729d, type: 3}
+  Img_info_in: {fileID: 21300000, guid: c0472496507274b46964f9285509a432, type: 3}
+  Img_exit_in: {fileID: 21300000, guid: d8181b01447aad74287908e929a2e9fc, type: 3}
+  Img_mouse_fora: {fileID: 0}
 --- !u!1 &2106454411
 GameObject:
   m_ObjectHideFlags: 0

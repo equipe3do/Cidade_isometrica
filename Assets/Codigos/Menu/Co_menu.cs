@@ -7,11 +7,11 @@ public class Co_menu : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    Rect Rect_play = new Rect(300,100,80,40);
-    Rect Rect_load = new Rect(300, 150, 80, 40);
-    Rect Rect_option = new Rect(300, 200, 80, 40);
-    Rect Rect_info = new Rect(300, 250, 80, 40);
-    Rect Rect_exit = new Rect(300, 300, 80, 40);
+    Rect Rect_play = new Rect(Screen.height/2, 100,80,40);
+    Rect Rect_load = new Rect(Screen.height / 2, 150, 80, 40);
+    Rect Rect_option = new Rect(Screen.height / 2, 200, 80, 40);
+    Rect Rect_info = new Rect(Screen.height / 2, 250, 80, 40);
+    Rect Rect_exit = new Rect(Screen.height / 2, 300, 80, 40);
     public Sprite Img_play;
     public Sprite Img_load;
     public Sprite Img_option;
@@ -25,7 +25,12 @@ public class Co_menu : MonoBehaviour
     public Sprite Img_exit_in;
     public Sprite Img_mouse_fora;
     bool mouse = false;
-    
+
+    bool play = false;
+    bool load = false;
+    bool option = false;
+    bool info = false;
+    bool exit = false;
 
     void Start()
     {
@@ -35,14 +40,66 @@ public class Co_menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Rect_play.Contains(Input.mousePosition))
+        Verifica_menu();
+    }
+    void Verifica_menu()
+    {
+
+        if (Img_play.rect.Contains(Input.mousePosition))
         {
             OnMouseEnter();
             print("mouse sobre o play");
+            play = true;
         }
         else
         {
-            mouse = false;
+            //mouse = false;
+            play = false;
+        }
+        if (Rect_load.Contains(Input.mousePosition))
+        {
+            OnMouseEnter();
+            print("mouse sobre o load");
+            load = true;
+        }
+        else
+        {
+            //mouse = false;
+            load = false;
+        }
+
+        if (Rect_info.Contains(Input.mousePosition))
+        {
+            OnMouseEnter();
+            print("mouse sobre o info");
+            info = true;
+        }
+        else
+        {
+            //mouse = false;
+            info = false;
+        }
+        if (Rect_option.Contains(Input.mousePosition))
+        {
+            OnMouseEnter();
+            print("mouse sobre o option");
+            option = true;
+        }
+        else
+        {
+            //mouse = false;
+            option = false;
+        }
+        if (Rect_exit.Contains(Input.mousePosition))
+        {
+            OnMouseEnter();
+            print("mouse sobre o exit");
+            exit = true;
+        }
+        else
+        {
+            //mouse = false;
+            exit = false;
         }
     }
 
@@ -52,15 +109,22 @@ public class Co_menu : MonoBehaviour
     }
     void OnGUI()
     {
-        if(GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
-        {
-            print("Go play");
-            SceneManager.LoadScene("Ce_jogar");
+        GUI.Button(Rect_play, Img_play.texture, GUIStyle.none);
+        if (play==true) {
+            if (GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none))
+            {
+                print("Go play");
+                SceneManager.LoadScene("Ce_jogar");
+            }
         }
-        if(GUI.Button(Rect_load, Img_load.texture, GUIStyle.none))
+        GUI.Button(Rect_load, Img_load.texture, GUIStyle.none);
+        if (load == true)
         {
-            print("Go load");
-            SceneManager.LoadScene("Ce_carregar");
+            if (GUI.Button(Rect_load, Img_load_in.texture, GUIStyle.none))
+            {
+                print("Go load");
+                SceneManager.LoadScene("Ce_carregar");
+            }
         }
         if(GUI.Button(Rect_option, Img_option.texture, GUIStyle.none))
         {
@@ -76,8 +140,11 @@ public class Co_menu : MonoBehaviour
         {
             print("Go exit");
         }
-        if(mouse==true){
-            GUI.Button(Rect_play, Img_mouse_sobre.texture, GUIStyle.none);
-        }
+        //if(mouse==true){
+        //  GUI.Button(Rect_play, Img_mouse_sobre.texture, GUIStyle.none);
+        //
+        // }
+
+
     }
 }
