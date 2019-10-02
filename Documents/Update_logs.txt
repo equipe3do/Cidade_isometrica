@@ -5,3 +5,7 @@ o mata tem que ser isometrico de 2.5d
 
 dia: 20/09/2019
 Informações: Elaborado um codigo de chegagem do mouse, mas está dando divergencia de localização.
+
+dia 02/10/2019
+Informações: Identificado uma falha no tipo de menu escolhido, a proxima etapa tem que trabalar uma adequação com um organziador de 
+gui com informações da tela e nao gerados aleatoriamente.
