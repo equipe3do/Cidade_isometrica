@@ -109,6 +109,7 @@ public class Co_menu : MonoBehaviour
     }
     void OnGUI()
     {
+        
         GUI.Button(Rect_play, Img_play.texture, GUIStyle.none);
         if (play==true) {
             if (GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none))
