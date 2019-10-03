@@ -9,3 +9,7 @@ Informações: Elaborado um codigo de chegagem do mouse, mas está dando divergenci
 dia 02/10/2019
 Informações: Identificado uma falha no tipo de menu escolhido, a proxima etapa tem que trabalar uma adequação com um organziador de 
 gui com informações da tela e nao gerados aleatoriamente.
+
+dia: 03/10/2019
+Informações: Tem que ser refeito o menu devido a um erro n grid 2d da unity onde ela começa no 0x px da localização da tela do computador
+e isso pode varia entre os equipamentos.
