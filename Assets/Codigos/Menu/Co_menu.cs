@@ -114,28 +114,51 @@ public class Co_menu : MonoBehaviour
         if(GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
         {
             SceneManager.LoadScene("Ce_jogar");
-            print("Go play");
+            //print("Go play");
         }
-        if (Rect_play.Contains(mouse)) {
-            GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none);
+            if (Rect_play.Contains(mouse)) {
+                GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none);
             
+            }
+        if(GUI.Button(Rect_load, Img_load.texture, GUIStyle.none))
+        {
+            //print("Go load");
+            SceneManager.LoadScene("Ce_carregar");
         }
-        GUI.Button(Rect_load, Img_load.texture, GUIStyle.none);
+            if (Rect_load.Contains(mouse))
+            {
+                GUI.Button(Rect_load, Img_load_in.texture, GUIStyle.none);
+            }
        
         if(GUI.Button(Rect_option, Img_option.texture, GUIStyle.none))
         {
-            print("Go options");
+            //print("Go options");
             SceneManager.LoadScene("Ce_opcoes");
         }
+            if (Rect_option.Contains(mouse))
+            {
+                GUI.Button(Rect_option, Img_option_in.texture, GUIStyle.none);
+            }
+
         if(GUI.Button(Rect_info, Img_info.texture, GUIStyle.none))
         {
-            print("Go infos");
+            //print("Go infos");
             SceneManager.LoadScene("Ce_info");
         }
+
+            if (Rect_info.Contains(mouse))
+            {
+                GUI.Button(Rect_info, Img_info_in.texture, GUIStyle.none);
+            }
+
         if(GUI.Button(Rect_exit, Img_exit.texture, GUIStyle.none))
         {
-            print("Go exit");
+            //print("Go exit");
         }
+            if (Rect_exit.Contains(mouse))
+            {
+                GUI.Button(Rect_exit, Img_exit_in.texture, GUIStyle.none);
+            }
         //if(mouse==true){
         //  GUI.Button(Rect_play, Img_mouse_sobre.texture, GUIStyle.none);
         //
