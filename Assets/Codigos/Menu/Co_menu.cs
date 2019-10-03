@@ -24,8 +24,8 @@ public class Co_menu : MonoBehaviour
     public Sprite Img_info_in;
     public Sprite Img_exit_in;
     public Sprite Img_mouse_fora;
-    bool mouse = false;
-
+    //bool mouse = false;
+    Vector2 mouse;
     bool play = false;
     bool load = false;
     bool option = false;
@@ -40,7 +40,8 @@ public class Co_menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Verifica_menu();
+        //Verifica_menu();
+        mouse = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
     }
     void Verifica_menu()
     {
@@ -105,28 +106,22 @@ public class Co_menu : MonoBehaviour
 
      void OnMouseEnter()
     {
-        mouse = true;
+        //mouse = true;
     }
     void OnGUI()
     {
-        
-        GUI.Button(Rect_play, Img_play.texture, GUIStyle.none);
-        if (play==true) {
-            if (GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none))
-            {
-                print("Go play");
-                SceneManager.LoadScene("Ce_jogar");
-            }
+        //GUI.DrawTexture(new Rect (0,0,64,64),Img_exit.texture);
+        if(GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
+        {
+            SceneManager.LoadScene("Ce_jogar");
+            print("Go play");
+        }
+        if (Rect_play.Contains(mouse)) {
+            GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none);
+            
         }
         GUI.Button(Rect_load, Img_load.texture, GUIStyle.none);
-        if (load == true)
-        {
-            if (GUI.Button(Rect_load, Img_load_in.texture, GUIStyle.none))
-            {
-                print("Go load");
-                SceneManager.LoadScene("Ce_carregar");
-            }
-        }
+       
         if(GUI.Button(Rect_option, Img_option.texture, GUIStyle.none))
         {
             print("Go options");
