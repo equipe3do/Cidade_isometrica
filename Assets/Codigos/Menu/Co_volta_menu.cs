@@ -9,6 +9,8 @@ public class Co_volta_menu : MonoBehaviour
 
     Rect Rect_volta = new Rect(400,400,80,40);
     public Sprite Img_volta;
+    public Sprite Img_volta_de;
+    Vector2 mouse;
     void Start()
     {
         
@@ -17,7 +19,7 @@ public class Co_volta_menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        mouse = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
     }
 
     private void OnGUI()
@@ -25,9 +27,13 @@ public class Co_volta_menu : MonoBehaviour
 
         if (GUI.Button(Rect_volta, Img_volta.texture, GUIStyle.none))
         {
-            print("Go play");
+            //print("Go play");
             SceneManager.LoadScene("Ce_menu");
         }
+            if (Rect_volta.Contains(mouse))
+            {
+                GUI.Button(Rect_volta, Img_volta_de.texture, GUIStyle.none);
+            }
 
     }
 }
