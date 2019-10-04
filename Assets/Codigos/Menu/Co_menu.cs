@@ -13,6 +13,8 @@ public class Co_menu : MonoBehaviour
     Rect Rect_option = new Rect(Screen.height / 2, 200, 80, 40);
     Rect Rect_info = new Rect(Screen.height / 2, 250, 80, 40);
     Rect Rect_exit = new Rect(Screen.height / 2, 300, 80, 40);
+    public Texture2D Img_click;
+    public Texture2D Img_cursor;
     public Sprite Img_play;
     public Sprite Img_load;
     public Sprite Img_option;
@@ -32,10 +34,10 @@ public class Co_menu : MonoBehaviour
     bool option = false;
     bool info = false;
     bool exit = false;
-
+    Vector2 cursorhotspot;
     void Start()
     {
-        
+        cursorhotspot = new Vector2(Img_cursor.width/2,Img_cursor.height/2);
     }
 
     // Update is called once per frame
@@ -112,7 +114,7 @@ public class Co_menu : MonoBehaviour
 
     void OnGUI()
     {
-        EditorGUIUtility.AddCursorRect(new Rect(10, 10, 100, 100), MouseCursor.Link);
+        //EditorGUIUtility.AddCursorRect(new Rect(10, 10, 100, 100), MouseCursor.Link);
         
         //GUI.DrawTexture(new Rect (0,0,64,64),Img_exit.texture);
         if (GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
@@ -121,10 +123,14 @@ public class Co_menu : MonoBehaviour
             //print("Go play");
         }
             if (Rect_play.Contains(mouse)) {
-           
 
+            Cursor.SetCursor(Img_click, cursorhotspot, CursorMode.Auto);
             GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none);
             //EditorGUIUtility.AddCursorRect(Rect_play, MouseCursor.RotateArrow);
+        }
+        else
+        {
+            Cursor.SetCursor(Img_cursor, cursorhotspot, CursorMode.Auto);
         }
         if(GUI.Button(Rect_load, Img_load.texture, GUIStyle.none))
         {
