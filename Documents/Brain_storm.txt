@@ -16,3 +16,8 @@ A tela tem que possuir seed randomica para deixar o jogo mais sensivel a cada pe
 sistema de campanha e jogo aberto
 
 Animação do menu.
+
+Tem que ser um jogo onde mistrua a contrução de cidade com a evolução de transportes e fabricas.
+ou q tenha o lado logistico elevado.
+exemplo o jogo começa em 18xx com a questao de inveções a vapor e a produção textil e vc tem q levar os recursos para outra localidade
+ou transportar isso para fora.

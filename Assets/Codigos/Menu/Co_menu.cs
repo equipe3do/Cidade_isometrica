@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class Co_menu : MonoBehaviour
@@ -108,18 +109,23 @@ public class Co_menu : MonoBehaviour
     {
         //mouse = true;
     }
+
     void OnGUI()
     {
+        EditorGUIUtility.AddCursorRect(new Rect(10, 10, 100, 100), MouseCursor.Link);
+        
         //GUI.DrawTexture(new Rect (0,0,64,64),Img_exit.texture);
-        if(GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
+        if (GUI.Button(Rect_play, Img_play.texture, GUIStyle.none))
         {
             SceneManager.LoadScene("Ce_jogar");
             //print("Go play");
         }
             if (Rect_play.Contains(mouse)) {
-                GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none);
-            
-            }
+           
+
+            GUI.Button(Rect_play, Img_play_in.texture, GUIStyle.none);
+            //EditorGUIUtility.AddCursorRect(Rect_play, MouseCursor.RotateArrow);
+        }
         if(GUI.Button(Rect_load, Img_load.texture, GUIStyle.none))
         {
             //print("Go load");
@@ -127,7 +133,8 @@ public class Co_menu : MonoBehaviour
         }
             if (Rect_load.Contains(mouse))
             {
-                GUI.Button(Rect_load, Img_load_in.texture, GUIStyle.none);
+            //EditorGUIUtility.AddCursorRect(Rect_load, MouseCursor.Link);
+            GUI.Button(Rect_load, Img_load_in.texture, GUIStyle.none);
             }
        
         if(GUI.Button(Rect_option, Img_option.texture, GUIStyle.none))
