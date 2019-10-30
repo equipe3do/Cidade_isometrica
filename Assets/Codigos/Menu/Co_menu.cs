@@ -38,6 +38,8 @@ public class Co_menu : MonoBehaviour
     void Start()
     {
         cursorhotspot = new Vector2(Img_cursor.width/2,Img_cursor.height/2);
+        Img_cursor.Resize(12, 19);
+        Img_click.Resize(12, 19);
     }
 
     // Update is called once per frame
