@@ -46,7 +46,7 @@ public class Co_menu : MonoBehaviour
     void Update()
     {
         //Verifica_menu();
-        mouse = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+        //mouse = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
     }
     void Verifica_menu()
     {
